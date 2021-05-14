@@ -113,7 +113,7 @@ const celebration = () => {
         };
     }
 
-    var celebrationCanvas = new CelebrationCanvas(document.getElementById('celebration'), 600, 400);
+    var celebrationCanvas = new CelebrationCanvas(document.getElementById('celebration'), 500, 300);
 
     celebrationCanvas.animate();
 

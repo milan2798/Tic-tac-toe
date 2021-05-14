@@ -16,7 +16,7 @@ const App = () => {
     }
 
     const [state, setState] = useState(istate);
-    const handleClick = (i, e) => {
+    const handleClick = (i) => {
         let square = [...state.square];
         if (square[i] != null) {
             alert("alredy filled!!")
@@ -30,7 +30,7 @@ const App = () => {
 
 
     const ticitem = (i) => {
-        return <Square value={state.square[i]} color={state.color} onClick={(e) => handleClick(i, e)} />
+        return <Square value={state.square[i]} color={state.color} onClick={(e) => handleClick(i)} />
     }
 
     const restart = () => {
